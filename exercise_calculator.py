@@ -23,3 +23,23 @@ def calculator():
         Operacion invalida
     """
     pass
+    numero1 = float(input())
+    numero2 = float(input())
+    operador = input()
+    if operador == "+":
+        suma = numero1 + numero2
+        print(f'Resultado: {float(suma)}')
+    elif operador == "-":
+        resta = numero1 - numero2
+        print(f'Resultado: {float(resta)}')
+    elif operador == "*":
+        multiplicacion = numero1 * numero2
+        print(f'Resultado: {float(multiplicacion)}')
+    elif operador == "/":
+        if numero2 == 0:
+            print("Error: division por cero")
+        else:
+            print(f"Resultado: {numero1 / numero2}")
+    else:
+        print("Operacion invalida")
+#calculator()

@@ -1,24 +1,32 @@
 def grades():
     """
-    Ejercicio 11 - Promedio de Calificaciones
+    Ejercicio 5 - Clasificar Notas
 
-    Dadas tres notas, calcular e imprimir:
-    1. El promedio de las tres notas
-    2. La nota máxima
-    3. La nota mínima
-    4. Cuántos puntos faltan del promedio a 10
+    Leer una nota (0-10) mediante input(). Clasificar la nota e imprimir:
+    - "Excelente" si está entre 9 y 10
+    - "Bueno" si está entre 7 y 8
+    - "Regular" si está entre 5 y 6
+    - "Insuficiente" si está entre 0 y 4
+
+    Ejemplo:
+        Para la entrada "9", la salida esperada es:
+        Excelente
+
+        Para la entrada "6", la salida esperada es:
+        Regular
+
+        Para la entrada "3", la salida esperada es:
+        Insuficiente
     """
-    nota1 = 8
-    nota2 = 7
-    nota3 = 9
+    pass
+    nota = int(input())
+    if nota >= 9 and nota <= 10:
+        print("Excelente")
+    elif nota >= 7 and nota <= 8:
+        print("Bueno")
+    elif nota >= 5 and nota <= 6:
+        print("Regular")
+    else:
+        print("Insuficiente")
+#grades()
 
-    promedio = (nota1 + nota2 + nota3) / 3
-    maxima_nota = max(nota1, nota2, nota3)
-    minima_nota = min(nota1, nota2, nota3)
-    puntos_faltantes = 10 - promedio
-
-    print(promedio)
-    print(maxima_nota)
-    print(minima_nota)
-    print(puntos_faltantes)
-grades()
