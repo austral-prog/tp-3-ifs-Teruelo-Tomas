@@ -1,18 +1,14 @@
 def triangle():
     """
-    Ejercicio 8 - Validar Triángulo
+    Ejercicio 12 - Área de Triángulo
 
-    Leer tres números que representan los lados de un triángulo mediante input().
-    Verificar si pueden formar un triángulo válido e imprimir el resultado.
-    Un triángulo es válido si la suma de dos lados cualesquiera es estrictamente mayor
-    que el tercer lado (desigualdad triangular). Si la suma es igual, forman una línea
-    recta, no un triángulo.
-
-    Ejemplo:
-        Para las entradas "3", "4" y "5", la salida esperada es:
-        Los lados forman un triangulo valido
-
-        Para las entradas "1", "2" y "5", la salida esperada es:
-        Los lados no forman un triangulo valido
+    Dados la base y altura de un triángulo, calcular e imprimir:
+    1. El área del triángulo ((base × altura) / 2)
     """
-    pass
+    base = 10
+    altura = 6
+
+    area = (base * altura) / 2
+    print(area)
+
+triangle()
